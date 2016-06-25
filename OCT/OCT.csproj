@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2F6C2D0F-41DB-499D-A693-03BC7E3A3BE7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OCT</RootNamespace>
+    <AssemblyName>OCT</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ologo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.0.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.TreeGX, Version=12.0.0.1, Culture=neutral, PublicKeyToken=cfcbd7476b2389d1, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AboutCtrl.designer.cs">
+      <DependentUpon>AboutCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddASNElFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddASNElFrm.designer.cs">
+      <DependentUpon>AddASNElFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CAI.cs" />
+    <Compile Include="CAIFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAIFrm.Designer.cs">
+      <DependentUpon>CAIFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CertExportFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CertExportFrm.designer.cs">
+      <DependentUpon>CertExportFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateCertCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CreateCertCtrl.designer.cs">
+      <DependentUpon>CreateCertCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateCertWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateCertWizard.Designer.cs">
+      <DependentUpon>CreateCertWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateCRL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CreateCRL.designer.cs">
+      <DependentUpon>CreateCRL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateCSR.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CreateCSR.designer.cs">
+      <DependentUpon>CreateCSR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrlControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CrlControl.designer.cs">
+      <DependentUpon>CrlControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CSRExportFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CSRExportFrm.designer.cs">
+      <DependentUpon>CSRExportFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DistPointFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DistPointFrm.designer.cs">
+      <DependentUpon>DistPointFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtensionEditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExtensionEditorControl.designer.cs">
+      <DependentUpon>ExtensionEditorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtensionFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtensionFrm.designer.cs">
+      <DependentUpon>ExtensionFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extentionsfrm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Extentionsfrm.designer.cs">
+      <DependentUpon>Extentionsfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralNameFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralNameFrm.designer.cs">
+      <DependentUpon>GeneralNameFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyGenerationFrm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyGenerationFrm.designer.cs">
+      <DependentUpon>KeyGenerationFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NameFrm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NameFrm.designer.cs">
+      <DependentUpon>NameFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PassForm.designer.cs">
+      <DependentUpon>PassForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PolicyFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PolicyFrm.designer.cs">
+      <DependentUpon>PolicyFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SIGNCertFrm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SIGNCertFrm.designer.cs">
+      <DependentUpon>SIGNCertFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StartPage.Designer.cs">
+      <DependentUpon>StartPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Task\Delegates.cs" />
+    <Compile Include="Task\DevStdTask.cs" />
+    <Compile Include="Task\TaskForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Task\TaskForm.Designer.cs">
+      <DependentUpon>TaskForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Task\TaskManager.cs" />
+    <Compile Include="TempStore.cs" />
+    <EmbeddedResource Include="AboutCtrl.resx">
+      <DependentUpon>AboutCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddASNElFrm.resx">
+      <DependentUpon>AddASNElFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CAIFrm.resx">
+      <DependentUpon>CAIFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CertExportFrm.resx">
+      <DependentUpon>CertExportFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateCertCtrl.resx">
+      <DependentUpon>CreateCertCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateCertWizard.resx">
+      <DependentUpon>CreateCertWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateCRL.resx">
+      <DependentUpon>CreateCRL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateCSR.resx">
+      <DependentUpon>CreateCSR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrlControl.resx">
+      <DependentUpon>CrlControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CSRExportFrm.resx">
+      <DependentUpon>CSRExportFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DistPointFrm.resx">
+      <DependentUpon>DistPointFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtensionEditorControl.resx">
+      <DependentUpon>ExtensionEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtensionFrm.resx">
+      <DependentUpon>ExtensionFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extentionsfrm.resx">
+      <DependentUpon>Extentionsfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralNameFrm.resx">
+      <DependentUpon>GeneralNameFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KeyGenerationFrm.resx">
+      <DependentUpon>KeyGenerationFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NameFrm.resx">
+      <DependentUpon>NameFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassForm.resx">
+      <DependentUpon>PassForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PolicyFrm.resx">
+      <DependentUpon>PolicyFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SIGNCertFrm.resx">
+      <DependentUpon>SIGNCertFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartPage.resx">
+      <DependentUpon>StartPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Task\TaskForm.resx">
+      <DependentUpon>TaskForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ALFX\ALFX\Al.Security.CA\Al.Security.CA.csproj">
+      <Project>{8c787ff3-563f-4253-b9c2-c98f6275751c}</Project>
+      <Name>Al.Security.CA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ALFX\ALFX\Al.Security\Al.Security.csproj">
+      <Project>{c640f49f-1b5b-43e9-8cc9-e1103c8f2c35}</Project>
+      <Name>Al.Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ManagedOpenSsl\ManagedOpenSsl-2010.csproj">
+      <Project>{73dcc218-655b-485f-8eac-0ce5f2f7343d}</Project>
+      <Name>ManagedOpenSsl-2010</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ologo.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
